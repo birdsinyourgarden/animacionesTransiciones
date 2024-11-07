@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    animation: fadeIn 1s ease-in forwards,
+            growth 1s 1s ease-in forwards, 
+            fadeOut 1s 2s ease-out forwards,
+            logoAnimation 5s 3s ease-in forwards;
+    width: 200px;
+}
+
+body:hover .logo {
+    animation-play-state: running;
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0.25;
+        transform: translateX(-100px);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0.25;
+        transform: translateX(100px);
+    }
+
+}
+
+@keyframes growth {
+    
+}

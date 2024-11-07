@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.logo {
+    border-radius: 50%;
+    transition: transform 10s ease-in;
+    width: 150px;
+}
+
+.moveToRight {
+    transform: translateX(1000px) scale(1.4) rotate(180deg);
+}
+
+.handler {
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.2em;
+    margin: 1em;
+    padding: .2em .4em;
+}
+
+.logo:hover {
+    background-color: aqua;
+}

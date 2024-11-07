@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    animation-name: logoAnimation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    width: 200px;
+}
+
+body:hover .logo {
+    animation-play-state: running;
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0.25;
+        transform: translateX(-100px);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0.25;
+        transform: translateX(100px);
+    }
+
+}
